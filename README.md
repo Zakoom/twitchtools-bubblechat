@@ -1,9 +1,9 @@
 # twitchtools-bubblechat
 This Twitch chat overlay displays messages in real time in a speech bubble design. It even supports emotes from BTTV, 7TV, and FFZ, as long as the streamer has set them up.
 
-To add this chat overlay to your stream, all you need to do is include a new browser source in OBS with the desired size. Here’s the URL to embed it:
+You have two options! You can either paste the GitHub URL into your OBS browser source, or download the three files (chat.html, javascript.js, and comfy.min.js) and put them all in the same folder. Then, you can embed the local chat.html. It’s necessary to add the channelname to the embedded URL for both cases.
 
-URL to embed: https://github.com/Zakoom/twitchtools-bubblechat/blob/main/chat.html?channelname=%channelname%
+GitHub URL to embed: https://github.com/Zakoom/twitchtools-bubblechat/blob/main/chat.html?channelname=%channelname%
 
 
 Now, let’s talk about some additional parameters:
