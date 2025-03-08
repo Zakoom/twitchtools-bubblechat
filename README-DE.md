@@ -1,4 +1,7 @@
 <h2>Twitch BubbleChat Overlay</h2>
+
+[English](README.md)
+
 <p>Dieses Chat-Overlay sorgt für eine ansprechende Darstellung im Sprechblasendesign von Chatnachrichten in Echtzeit. Zudem werden Emotes von Twitch (Globale und vom Channel), BTTV, 7TV und FFZ vollständig unterstützt, sofern vom Streamenden bei den Anbietern eingerichtet, sodass die gesamte Bandbreite an Community-Emotes nahtlos integriert ist.</p>
 
 <h2>Einrichtung</h2>
