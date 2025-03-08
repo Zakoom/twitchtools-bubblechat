@@ -3,7 +3,7 @@ This Twitch chat overlay displays messages in real time in a speech bubble desig
 
 You have two options! You can either paste the GitHub URL into your OBS browser source, or download the three files (chat.html, javascript.js, and comfy.min.js) and put them all in the same folder. Then, you can embed the local chat.html. It’s necessary to add the channelname to the embedded URL for both cases.
 
-GitHub URL to embed: https://github.com/Zakoom/twitchtools-bubblechat/blob/main/chat.html?channelname=%channelname%
+GitHub URL to embed: https://zakoom.github.io/twitchtools-bubblechat/chat.html?channelname=%channelname%
 
 
 Now, let’s talk about some additional parameters:
@@ -15,4 +15,4 @@ Now, let’s talk about some additional parameters:
 
 Let’s say you want to use everything, with the Channelname zakoom and the Twitch-ID 123456789, here’s an example:
 
-URL to embed: https://github.com/Zakoom/twitchtools-bubblechat/blob/main/chat.html?channelname=zakoom&twitchid=123456789&use_bttv=1&use_7tv=1&use_ffz=1
+URL to embed: https://zakoom.github.io/twitchtools-bubblechat/chat.html?channelname=zakoom&twitchid=123456789&use_bttv=1&use_7tv=1&use_ffz=1
