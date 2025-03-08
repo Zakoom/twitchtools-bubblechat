@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Chat</title>
+    <script src="comfy.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            font-family: monospace;
+            height: 100%;
+        }
+
+		#chat { /* Chat-Container */
+			position: absolute;
+			right: 10px;
+			bottom: 10px; /* Chat am unteren Rand fixieren */
+			width: auto; /* Breite an das Fenster bzw einegstellte Breite in OBS anpassen */
+			max-width: 95%;
+			display: flex;
+			align-items: flex-end;
+			flex-direction: column;
+			gap: 50px; /* Lücke zwischen 2 Nachrichten */
+			padding: 10px;
+			overflow-y: visible;
+
+		}
+		
+		.bubble-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			width: auto;
+			position: relative;
+		}
+
+		.chat-username { /* Username */
+			display: flex;
+			flex-direction: column;
+			font-size: 1.5rem;
+			background: #ff3e45;
+			color: black;
+			padding: 3px 10px;
+			font-weight: bold;
+			border-radius: 10px;
+			white-space: nowrap;
+			margin-bottom: 2px;
+			align-self: flex-start; /* Username linksbündig zur Nachricht */
+			animation: slideIn 0.5s ease-out forwards;
+			position: absolute;
+			top: -15px;
+			left: -15px;
+			z-index: 2; /* Über der Bubble anzeigen */
+		}
+
+		.chat-message { /* Nachrichtentext */
+			font-size: 1.5rem;
+			background: #f5f0eb;
+			color: #333;
+			min-width: 100px;
+			min-height: 40px;
+			padding: 20px 5px 5px 5px;
+			justify-content: center;
+			border-radius: 15px;
+			word-break: break-word;
+			overflow-wrap: break-word;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+			position: relative;
+			align-self: flex-end;
+			opacity: 0;
+			animation: slideIn 1s ease-out forwards;
+			align-items: center;
+			text-align: center;
+		}
+
+		.chat-message img { /* Emotes */
+			display: inline;
+			height: 1.5rem;
+			vertical-align: middle;
+    		margin: 0 2px; /* kleiner Abstand links und rechts */
+		}
+
+        #chat::-webkit-scrollbar {
+            display: none;
+        }
+		@keyframes slideIn {
+			from {
+				transform: translateY(50px); /* Start 50px tiefer unsichtbar*/
+				opacity: 0;
+			}
+			to {
+				transform: translateY(0); /* auf richtige Position mit 100% Sichtbarkeit */
+				opacity: 1;
+			}
+		}
+    </style>
+</head>
+<body>
+    <div id="chat">
+    </div>
+    <script src="javascript.js" defer></script>
+</body>
+</html>
